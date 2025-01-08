@@ -78,51 +78,52 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea
-              rows={7}
-              name='message'
-              value={form.message}
-              onChange={handleChange}
-              placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
+  ref={formRef}
+  onSubmit={handleSubmit}
+  className='mt-1 flex flex-col gap-3'
+>
+  <label className='flex flex-col'>
+    <span className='text-white font-medium mb-2'>Your Name</span>
+    <input
+      type='text'
+      name='name'
+      value={form.name}
+      onChange={handleChange}
+      placeholder="What's your name?"
+      className='bg-tertiary py-2 px-4 placeholder:text-secondary text-white rounded-md outline-none border-none font-medium'
+    />
+  </label>
+  <label className='flex flex-col'>
+    <span className='text-white font-medium mb-2'>Your Email</span>
+    <input
+      type='email'
+      name='email'
+      value={form.email}
+      onChange={handleChange}
+      placeholder="What's your email?"
+      className='bg-tertiary py-2 px-4 placeholder:text-secondary text-white rounded-md outline-none border-none font-medium'
+    />
+  </label>
+  <label className='flex flex-col'>
+    <span className='text-white font-medium mb-2'>Your Message</span>
+    <textarea
+      rows={5}
+      name='message'
+      value={form.message}
+      onChange={handleChange}
+      placeholder='What would you like to say?'
+      className='bg-tertiary py-2 px-4 placeholder:text-secondary text-white rounded-md outline-none border-none font-medium'
+    />
+  </label>
 
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
+  <button
+    type='submit'
+    className='bg-tertiary py-2 px-6 rounded-lg outline-none w-fit text-white font-bold shadow-md shadow-primary'
+  >
+    {loading ? "Sending..." : "Send"}
+  </button>
+</form>
+
       </motion.div>
 
       <motion.div
