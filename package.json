@@ -20,6 +20,7 @@
     "react-router-dom": "^7.1.1",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.5.3",
+    "swiper": "^11.2.0",
     "three": "^0.172.0"
   },
   "devDependencies": {
