@@ -16,7 +16,7 @@ const FeedbackCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='bg-black-200 p-6 rounded-2xl flex-shrink-0 w-[250px] flex flex-col justify-between'
+    className='bg-black-200 p-6 rounded-2xl w-full sm:w-[300px] md:w-[250px] flex flex-col justify-between'
   >
     <div>
       <p className='text-white tracking-wider text-[14px]'>{testimonial}</p>
@@ -52,7 +52,7 @@ const Feedbacks = () => {
         </motion.div>
       </div>
       <div
-        className={`-mt-16 pb-10 ${styles.paddingX} flex justify-between gap-5`}
+        className={`-mt-16 pb-10 ${styles.paddingX} flex flex-wrap md:flex-nowrap justify-center md:justify-between gap-5`}
       >
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />

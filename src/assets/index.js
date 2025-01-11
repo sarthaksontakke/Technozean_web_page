@@ -25,7 +25,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import AI from "./company/AI.png";
-import  chatbot from "./company/chatbot.png";
+import chatbot from "./company/chatbot.png";
 import search from "./company/search.png";
 import supportteam from "./company/supportteam.png";
 import WAautomation from "./company/WAautomation.png";
